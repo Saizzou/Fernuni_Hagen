@@ -8,8 +8,8 @@ begin
 	readln(a);
 	readln(b);
 	readln(c);
-	x:=True;
 	begin
+	{ kontrolle ob 0 oder negative zahlen eingegeben sind }
 		if a > 0 then
 			if b > 0 then
 				if c > 0 then
@@ -20,6 +20,7 @@ begin
     writeln ('Negative zahl ist eingegeben. Bitte nur zahlen grösser als 0 eingeben');
 	end;
 	begin
+	{ die eingegebene werten sortieren }
 		if a > b then
 			if a > c then
 				if sqr(a) = sqr(b) + sqr(c) then
