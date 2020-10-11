@@ -10,14 +10,13 @@ begin
 	readln(c);
 	begin
 	{ kontrolle ob 0 oder negative zahlen eingegeben sind }
-		if a > 0 then
-			if b > 0 then
-				if c > 0 then
+		if (a > 0) and (b > 0) and (c > 0) then
+			if (a <= b + c) and (b <= a + c) and (c <= a + b) then
 				writeln ('Dreieck kann berechnet werden')
 			else
+				writeln ('Mit diese Werten kann kein Dreieck gebildet werden')
 		else
-    else
-    writeln ('Negative zahl ist eingegeben. Bitte nur zahlen grösser als 0 eingeben');
+			writeln ('Negative zahl ist eingegeben. Bitte nur zahlen grösser als 0 eingeben');
 	end;
 	begin
 	{ die eingegebene werten sortieren }
