@@ -2,9 +2,9 @@ program EURBetrag2 (input, output);
 { EUR Betrag ausgeben mit }
 
 	const
-	WAEHRUNG = 'EUR';
+	WAEHRUNG = 'EUR'; { dies ist ein constant also ein wert der sich nicht ändert }
 	
-	var
+	var { variablen sind die werte die sich im Programm ändern werden }
 	Betrag : real;
 	
 begin
